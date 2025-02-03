@@ -1,0 +1,115 @@
+.home-container {
+    display: flex;
+    margin-top: 60px;
+    width: 1200px;
+ 
+  
+  }
+  
+  .left-part {
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+ 
+    background-color: #0c0b0b; /* Adjust as needed */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title {
+    margin-left: 70px;
+    font-size: 1.9em;
+    color: yellow;
+  }
+  
+  .name, .surname {
+    font-size: 6.5em;
+    font-weight: bold;
+    gap: 50px;
+    margin-left: 60px;
+  }
+  
+  .role {
+    color: rgb(97, 96, 94);
+    margin-left: 50px;
+    gap: 50px;
+    margin-bottom: 24px;
+    font-size: 2.3em;
+  }
+  
+  .hire-button {
+    padding: 10px 20px; /* Button padding */
+    margin-left: 70px;
+    width: 200px;
+    font-size: 1.5em; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Button hover transition */
+    }
+    
+    .hire-button:hover {
+        background-color: #033a75; /* Darker button color on hover */
+    }
+  
+  .right-part {
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 450px;
+    height: 750px;
+    border-radius: 6%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .profile-image {
+    width: 100%;
+    border-radius: 5%;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    opacity: 0.8; /* Fade effect */
+}
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Space logos evenly */
+    align-items: center; /* Center logos vertically */
+    margin-top: 20px; /* Space above the logo container */
+    width: 450px; /* Fixed width for the container */
+    height: 100px; /* Fixed height for the container */
+    background-color: #1b1b1b; /* Background color for contrast */
+    border-radius: 10%; /* Rounded corners */
+    margin-left: 167px;
+    padding: 10px; /* Padding inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.logo {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition */
+    position: relative; /* Position for hover effect */
+}
+
+.logo img {
+    width: 100%; /* Fill the logo container */
+    height: auto;
+    border-radius: 10%; /* Slightly rounded logos */
+    transition: transform 0.3s; /* Smooth scaling */
+}
+
+.logo:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    opacity: 0.9; /* Slight fade effect on hover */
+}
+
+.logo:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}

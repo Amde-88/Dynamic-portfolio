@@ -1,0 +1,80 @@
+/* Resume.css */
+.resume-container {
+    display: flex;
+    width: 1200px; /* Total width */
+      
+    margin-top: 80px;
+    margin: auto; /* Center the resume */
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+.resume {
+    margin-top: 30px;
+  margin-left: 360px;
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #d19706;
+}
+
+.left, .right {
+    width: 600px; /* Both parts 600px wide */
+    height: 890px;
+    padding: 20px;
+   
+}
+
+.left { 
+    
+    background-color:black; /* Light gray background for left part */
+    border-right: 2px solid #ccc; /* Border to differentiate parts */
+    margin-top: 22px;
+}
+
+.right {
+    margin-left: 17px;
+    background-color: black; /* White background for right part */
+    margin-top: 24px;
+}
+
+h4, h5 {
+    margin: 20px 0 10px; /* Margin above and below titles */
+    font-size: 1.9em;
+    color: #9f7303;
+    padding: 5px 0; /* Padding for titles */
+    position: relative; /* Position for the line effect */
+}
+
+h5.section-title {
+    border-bottom: 2px solid #ccc; /* Line below title */
+    font-size: 2.8em;
+    color: #f5d687;
+    padding-bottom: 10px; /* Space for line */
+}
+
+.logo {
+    width: 70px; /* Set logo width */
+    border-radius: 5%;
+    height: auto; /* Maintain aspect ratio */
+    
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text */
+}
+
+.education-row, .experience-row {
+    display: flex;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px;
+}
+
+.education-details, .experience-details {
+    display: flex;
+    font-size: 1.4em;
+    flex-direction: column; /* Stack details vertically */
+}
+
+.project {
+    margin-bottom: 10px;
+ 
+}

@@ -1,0 +1,159 @@
+.about-container {
+    display: flex;
+    flex-direction:column; /* Stack the left and right parts vertically */
+    max-width: 1200px; /* Total width */
+
+}
+
+.left-parts {
+    margin-left: 20px;
+    width: 500px;
+    height: 600px;
+    border-radius: 8%;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-image {
+    width: 100%;
+    height: 800px; /* Adjusted for visual consistency */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition */
+}
+
+.about-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    opacity: 0.9; /* Slight fade */
+}
+
+.right-parts {
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    margin-left: 607px;
+    margin-top: -582px;
+    background-color: #0c0c0c; /* Adjust as needed */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titles {
+    font-size: 3.6em; /* Title font size */
+    color: yellow; /* Title color */
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 30px; /* Space below title */
+}
+
+.greeting {
+    font-size: 2.0em; /* Greeting font size */
+    margin: 10px 0; /* Margin above and below */
+}
+
+.roles {
+    font-size: 1.5em; /* Role font size */
+    color: #e4c70e;
+    margin: 10px 0; /* Margin above and below */
+}
+
+.description {
+    margin: 20px 0; /* Space around description */
+    letter-spacing: 1px; /* Increase space between letters */
+    word-spacing: 3px; /* Increase space between words */
+    color: rgb(203, 201, 201);
+}
+
+.info-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: flex-start; /* Align items at the start */
+}
+
+.info-labels {
+    flex: 1; /* Allow labels to take equal space */
+    margin-right: 190px; /* Space between labels and descriptions */
+}
+
+.info-descriptions {
+    margin-right: 245px;
+    margin-left: -222px;
+    flex: 1; /* Allow descriptions to take equal space */
+}
+
+.info-labels p,
+.info-descriptions p {
+    margin: 10px 0; /* Vertical spacing between items */
+}
+
+.info-descriptions a {
+    color: blue; /* Optional: style link color */
+    text-decoration: underline; /* Optional: underline links */
+}
+
+.cv-button {
+    padding: 10px 20px; /* Button padding */
+    margin-top: 36px;
+    margin-left: 80px;
+    width: 190px;
+    font-size: 1.5em; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Button hover transition */
+}
+
+.cv-button:hover {
+    background-color: #033a75; /* Darker button color on hover */
+}
+
+.services {
+    width: 100%; /* Full width for services section */
+    margin-top: 120px; /* Space above the services section */
+    text-align: center; /* Center text */
+}
+
+.services-title {
+    font-size: 3.5em; /* Title font size for services */
+    font-weight: bolder;
+    color: #e4c70e;
+    margin-bottom: 20px; /* Space below title */
+}
+
+.services-container {
+    display: flex;
+    gap: 40px;
+    flex-direction: row; /* Stack service containers vertically */
+    align-items: center; /* Center align items */
+}
+
+.service-container {
+    width: 350px; /* Container width */
+    height: 260px; /* Container height */
+   
+    border: 1px solid #ccc; /* Border for the container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 20px; /* Space between containers */
+    text-align: center; /* Center align text */
+}
+
+.service-logo {
+    width: 60px; /* Logo width */
+    height: 60px; /* Logo height */
+    margin-bottom: 10px; /* Space below logo */
+}
+
+.service-title {
+    font-weight: bold; /* Bold title */
+    margin: 10px 0; /* Space around title */
+}
+
+.service-description {
+    font-size: 0.9em; /* Description font size */
+    color: #666; /* Description color */
+}
+

@@ -1,0 +1,153 @@
+/* src/Port.css */
+.portfolio {
+  margin-top: 30px;
+  color: #e4c70e;
+
+  padding: 20px;
+  text-align: center;
+}
+
+.projects {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.portfolio h2 {
+  color: #e4c70e;
+  font-size: 3.1em;
+  font-weight: bold;
+}
+
+.project-card {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  background-size: cover; /* Ensures the background image covers the entire card */
+  background-position: center; /* Center the background image */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(249, 235, 235, 0.1);
+  overflow: hidden;
+}
+
+.project-card.cassopia {
+  background-image: url('../port-images/cassopia-hotel.jpeg');
+}
+
+.project-card.car-system {
+  background-image: url('../port-images/carsystem.jpg');
+}
+
+.project-card.door-to-door {
+  background-image: url('../port-images/door-to.jpg');
+}
+
+.project-card.portfolio-bg {
+  background-image: url('../port-images/port.jpg');
+}
+
+.project-card.task {
+  background-image: url('../port-images/task.jpg');
+}
+
+.project-card.api-integration {
+  background-image: url('../port-images/API.png');
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(246, 244, 244, 0.7);
+  color: rgb(7, 7, 7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Styles for the link */
+.link {
+  font-size: 34px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Circle style for the link */
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;  /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Circle background color */
+  font-size: 38px; /* Increase the size of the + sign */
+  color: white; /* Color of the + sign */
+}
+
+h3 {
+  margin: 5px 0;
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* src/component/Port.css */
+.blogs {
+  display: flex;
+  flex-wrap: wrap; /* Allow blog cards to wrap */
+  gap: 30px; /* Space between blog cards */
+  margin-top: 20px; /* Space above the blog section */
+}
+
+.blog-card {
+  background: #f9f9f9; /* Light background for blog cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 340px; /* Fixed width for blog cards */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.blog-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.blog-image {
+  width: 100%; /* Make image responsive */
+
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+.blog-date, .blog-author {
+  font-size: 12px; /* Smaller font size for date and author */
+  color: #777; /* Lighter color for text */
+}
+
+.read-more {
+  display: inline-block; /* Make link appear as a button */
+  margin-top: 10px; /* Space above the link */
+  padding: 8px 12px; /* Padding for the button */
+  background: #007bff; /* Button color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+}
+
+.read-more:hover {
+  background: #0056b3; /* Darker color on hover */
+}

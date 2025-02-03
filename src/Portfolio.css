@@ -1,0 +1,90 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:  #0c0c0c; /* Dark background */
+  color: #f9f5f5; /* Light text color */
+}
+
+.Cassopia {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.header-container {
+  position: fixed; /* Keep the header fixed */
+  top: 0; /* Position it at the top */
+  display: flex; /* Align items in a row */
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Space between elements */
+  padding: 10px 20px; /* Padding for spacing */
+  width: 100%; /* Full width */
+  background-color: rgba(27, 8, 8, 0.9); /* Slightly transparent background */
+  z-index: 1000; /* Ensure header stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.header-icon {
+  width: 50px; /* Icon size */
+  height: 50px; /* Ensure height matches width for a perfect circle */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area */
+  margin-right: 10px; /* Space between icon and header text */
+}
+
+.aa {
+  font-size: 2.5em; /* Font size for the header title */
+  margin-right: 333px; /* Reset margin */
+  color: #f9f5f5; /* Light text color */
+}
+
+.nav-links {
+  font-family: 1.5em;
+  display: flex; /* Align links in a row */
+  align-items: center; /* Vertical alignment */
+  gap: 40px; /* Space between links */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline */
+
+  color: #f9f5f5; /* Use a light color for links */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.email-container {
+  display: flex; /* Align email icon and text in a row */
+  align-items: center; /* Vertical alignment */
+  margin-right: 50px;
+}
+
+.email-icon {
+  width: 20px; /* Email icon size */
+  height: 20px; /* Email icon size */
+  gap: 50px;
+  margin-right: 5px; /* Space between icon and email text */
+}
+
+.email-link {
+  margin-left: 30px;
+  text-decoration: none; /* Remove underline */
+  color: #f9f5f5; /* Link color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.email-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Content styles */
+.content {
+  margin-top: 100px; /* Space below the fixed header */
+  padding: 20px; /* Add some padding for content */
+  width: 100%; /* Full width for the content area */
+  box-sizing: border-box; /* Include padding in width */
+}
