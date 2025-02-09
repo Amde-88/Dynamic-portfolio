@@ -1,8 +1,7 @@
 /* src/Port.css */
 .portfolio {
-  margin-top: 30px;
+  margin-top: 10px;
   color: #e4c70e;
-
   padding: 20px;
   text-align: center;
 }
@@ -110,10 +109,11 @@ p {
   display: flex;
   flex-wrap: wrap; /* Allow blog cards to wrap */
   gap: 30px; /* Space between blog cards */
-  margin-top: 20px; /* Space above the blog section */
+  margin-top: 30px; /* Space above the blog section */
 }
 
 .blog-card {
+  margin-top: 30px;
   background: #f9f9f9; /* Light background for blog cards */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

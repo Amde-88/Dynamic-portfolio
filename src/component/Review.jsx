@@ -59,8 +59,8 @@ const Review = () => {
 
       {/* Images placed outside the review-cards section */}
       <div className="image">
+        <img className="about-images" src={require('../port-images/sami-ct.jpg')} alt="review" style={{ width: '100px', height: '77px' }} />
         <img className="about-images" src={require('../port-images/carsystem.jpg')} alt="review" style={{ width: '100px', height: '77px' }} />
-        <img className="about-images" src={require('../port-images/cassop.jpg')} alt="review" style={{ width: '100px', height: '77px' }} />
         <img className="about-images" src={require('../port-images/cassop.jpg')} alt="review" style={{ width: '100px', height: '77px' }} />
       </div>
 

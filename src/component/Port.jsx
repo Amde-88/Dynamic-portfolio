@@ -26,7 +26,7 @@ const projects = [
   {
     title: 'Personal Portfolio Website',
     description: 'Showcase your skills, projects, and resume.',
-    url: 'https://github.com/Amde-88/hotel-website',
+    url: 'https://github.com/Amde-88/Amde-Portfolio',
     className: 'portfolio-bg', // Class for background
   },
   {

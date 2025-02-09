@@ -81,10 +81,10 @@
     display: flex;
     justify-content: space-around; /* Space logos evenly */
     align-items: center; /* Center logos vertically */
-    margin-top: 20px; /* Space above the logo container */
+    margin-top: 50px; /* Space above the logo container */
     width: 450px; /* Fixed width for the container */
     height: 100px; /* Fixed height for the container */
-    background-color: #1b1b1b; /* Background color for contrast */
+    background-color: #1b1a1a; /* Background color for contrast */
     border-radius: 10%; /* Rounded corners */
     margin-left: 167px;
     padding: 10px; /* Padding inside the container */

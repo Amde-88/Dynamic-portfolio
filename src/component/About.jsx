@@ -5,12 +5,13 @@ import './Skills.css'; // Import the Skills CSS styles
 const About = () => {
     const handleDownloadCV = () => {
         const link = document.createElement('a');
-        link.href = 'path/to/your/CV.pdf'; // Update with the correct path
+        link.href = 'https://resume-example.com/builder/resumes';
         link.download = 'Amde_Haimanot_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
     };
+    
 
     // About data
     const aboutData = {

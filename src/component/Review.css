@@ -13,7 +13,7 @@
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* Responsive grid */
     height: 200px;
     gap: 20px;
-    margin-top: 20px; /* Space above the review section */
+    margin-top: -50px; /* Space above the review section */
   }
   
   .review-card {

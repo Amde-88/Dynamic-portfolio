@@ -156,6 +156,12 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <footer className="footer">
+            <div className="footer-content">
+                <p>&copy; 2025 Amde. Frontend Developer All rights reserved.</p>
+             
+            </div>
+        </footer>
         </div>
     );
 };

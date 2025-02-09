@@ -12,6 +12,7 @@
 }
 .left-partt {
     flex: 1;
+    margin-top: -15px;
     margin-right: 20px;
     background: #121212; /* Light background for left part */
     padding: 20px;
@@ -20,6 +21,7 @@
 }
 
 .right-partt {
+    margin-top: -15px;
     flex: 1;
     margin-left: 105px;
     text-align: left; /* Align text to the left */
@@ -113,7 +115,7 @@ button:hover {
     margin-left: 32px;
     justify-content: space-around; /* Space logos evenly */
     align-items: center; /* Center logos vertically */
-    margin-top: 20px; /* Space above the logo container */
+    margin-top: 40px; /* Space above the logo container */
     width: 450px; /* Fixed width for the container */
     height: 100px; /* Fixed height for the container */
     background-color: #1b1b1b; /* Background color for contrast */
@@ -158,3 +160,18 @@ button:hover {
     font-size: 1.5em;
     color: wheat;
 }
+.footer {
+    
+    color: #9a9898;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+

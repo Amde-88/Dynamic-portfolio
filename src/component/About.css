@@ -87,7 +87,7 @@
 }
 
 .info-descriptions a {
-    color: blue; /* Optional: style link color */
+    color: rgb(7, 7, 212); /* Optional: style link color */
     text-decoration: underline; /* Optional: underline links */
 }
 
@@ -111,7 +111,7 @@
 
 .services {
     width: 100%; /* Full width for services section */
-    margin-top: 120px; /* Space above the services section */
+    margin-top: 100px; /* Space above the services section */
     text-align: center; /* Center text */
 }
 
@@ -123,6 +123,7 @@
 }
 
 .services-container {
+    margin-top: 20px;
     display: flex;
     gap: 40px;
     flex-direction: row; /* Stack service containers vertically */

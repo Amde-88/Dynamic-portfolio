@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import Home from './component/Home';
 import About from './component/About';
@@ -18,8 +18,14 @@ function Portfolio() {
 
   const scrollToSection = (ref) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      const offset = 120; // Offset in pixels
+      const top = ref.current.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     }
+  };
+
+  const handleHireMeClick = () => {
+    scrollToSection(contactRef); // Scroll to the contact section
   };
 
   return (
@@ -48,7 +54,7 @@ function Portfolio() {
         {/* Main content area */}
         <div className="content">
           <div id="home" ref={aboutRef}>
-            <Home />
+            <Home onHireMeClick={handleHireMeClick} /> {/* Pass the click handler as a prop */}
           </div>
           <div ref={aboutRef}>
             <About />
@@ -63,15 +69,7 @@ function Portfolio() {
             <Contact />
           </div>
         </div>
-        
-        {/* Routes for direct navigation */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/port" element={<Port />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+  
       </div>
     </Router>
   );
