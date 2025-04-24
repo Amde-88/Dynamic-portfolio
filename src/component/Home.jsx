@@ -1,18 +1,67 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 const Home = ({ onHireMeClick }) => {
+    const [text, setText] = useState('');
+    const words = [
+        "Frontend-Developer",
+        "Website-Developer",
+        "Software-Engineer",
+    ];
+
+    useEffect(() => {
+        const displayWord = async (word) => {
+            return new Promise((resolve) => {
+                setText(word); // Set the word immediately
+                setTimeout(() => {
+                    resolve();
+                }, 2000); // Show word for 2 seconds
+            });
+        };
+
+        const removeWord = () => {
+            return new Promise((resolve) => {
+                const letterInterval = setInterval(() => {
+                    if (text.length > 0) {
+                        setText((prev) => prev.slice(0, -1));
+                    } else {
+                        clearInterval(letterInterval);
+                        resolve();
+                    }
+                }, 700); // Adjust timing for letter removal
+            });
+        };
+
+        const cycleWords = async () => {
+            while (true) {
+                for (let i = 0; i < words.length; i++) {
+                    await displayWord(words[i]);
+                    await removeWord();
+                }
+            }
+        };
+
+        cycleWords();
+
+        // Clean up on unmount
+        return () => {
+            setText('');
+        };
+    }, []);
+
     return (
         <div className="home-container">
             <div className="left-part">
                 <div className="title">Hello, I'M</div>
                 <div className="name">AMDE</div>
                 <div className="surname">HAIMANOT</div>
-                <div className="role">Frontend Developer</div>
+                <div className="role">
+                    
+                    <span className="bold">{text}</span>
+                </div>
                 <button className="hire-button" onClick={onHireMeClick}>
                     Hire Me
                 </button>
-
                 <div className="logo-container">
                     <a href="https://github.com/Amde-88" className="logo" title="GitHub">
                         <img src={require('../port-images/gitt.png')} alt="GitHub" />

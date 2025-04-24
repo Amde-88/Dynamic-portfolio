@@ -1,7 +1,7 @@
 /* Resume.css */
 .resume-container {
     display: flex;
-    width: 1200px; /* Total width */
+    width: 1000px; /* Total width */
       
     margin-top: 80px;
     margin: auto; /* Center the resume */
@@ -17,8 +17,8 @@
 }
 
 .left, .right {
-    width: 600px; /* Both parts 600px wide */
-    height: 890px;
+    width: 500px; /* Both parts 600px wide */
+    height: 990px;
     padding: 20px;
    
 }
@@ -27,11 +27,11 @@
     
     background-color:black; /* Light gray background for left part */
     border-right: 2px solid #ccc; /* Border to differentiate parts */
-    margin-top: 22px;
+    margin-top: 12px;
 }
 
 .right {
-    margin-left: 17px;
+    margin-left: 12px;
     background-color: black; /* White background for right part */
     margin-top: 24px;
 }

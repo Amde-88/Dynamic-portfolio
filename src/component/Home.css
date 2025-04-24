@@ -1,15 +1,15 @@
 .home-container {
     display: flex;
-    margin-top: 60px;
-    width: 1200px;
- 
+    margin-top: 10px;
+    width: 1000px;
+  
   
   }
   
   .left-part {
-    width: 600px;
+    width: 500px;
     height: 600px;
-    padding: 20px;
+    padding: 10px;
  
     background-color: #0c0b0b; /* Adjust as needed */
     color: white;
@@ -25,25 +25,27 @@
   }
   
   .name, .surname {
-    font-size: 6.5em;
+    font-size: 4.5em;
     font-weight: bold;
     gap: 50px;
-    margin-left: 60px;
+    margin-left: 30px;
   }
   
   .role {
-    color: rgb(97, 96, 94);
+    color: rgb(247, 224, 175);
     margin-left: 50px;
     gap: 50px;
+    text-decoration: underline;
     margin-bottom: 24px;
-    font-size: 2.3em;
+    font-size: 2.6em;
   }
+  
   
   .hire-button {
     padding: 10px 20px; /* Button padding */
     margin-left: 70px;
     width: 200px;
-    font-size: 1.5em; /* Button font size */
+    font-size: 1.7em; /* Button font size */
     color: white; /* Button text color */
     background-color: #007bff; /* Button background color */
     border: none; /* No border */
@@ -58,8 +60,8 @@
   
   .right-part {
     margin-top: 30px;
-    margin-left: 100px;
-    width: 450px;
+    margin-left: 10px;
+    width: 400px;
     height: 750px;
     border-radius: 6%;
     overflow: hidden;
@@ -81,8 +83,9 @@
     display: flex;
     justify-content: space-around; /* Space logos evenly */
     align-items: center; /* Center logos vertically */
-    margin-top: 50px; /* Space above the logo container */
-    width: 450px; /* Fixed width for the container */
+    margin-top: 90px; /* Space above the logo container */
+  
+    width: 400px; /* Fixed width for the container */
     height: 100px; /* Fixed height for the container */
     background-color: #1b1a1a; /* Background color for contrast */
     border-radius: 10%; /* Rounded corners */
@@ -112,4 +115,11 @@
 
 .logo:hover {
     cursor: pointer; /* Change cursor to pointer on hover */
+}
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
 }

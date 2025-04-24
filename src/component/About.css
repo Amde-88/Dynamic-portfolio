@@ -1,22 +1,23 @@
 .about-container {
     display: flex;
     flex-direction:column; /* Stack the left and right parts vertically */
-    max-width: 1200px; /* Total width */
+    max-width: 1000px; /* Total width */
 
 }
 
 .left-parts {
     margin-left: 20px;
-    width: 500px;
+    width: 400px;
     height: 600px;
-    border-radius: 8%;
+    margin-bottom: 20px;
+    border-radius: 4%;
     overflow: hidden;
     position: relative;
 }
 
 .about-image {
     width: 100%;
-    height: 800px; /* Adjusted for visual consistency */
+    height: 900px; /* Adjusted for visual consistency */
     transition: transform 0.3s, opacity 0.3s; /* Smooth transition */
 }
 
@@ -26,11 +27,11 @@
 }
 
 .right-parts {
-    width: 600px;
+    width: 450px;
     height: 600px;
     padding: 20px;
-    margin-left: 607px;
-    margin-top: -582px;
+    margin-left: 507px;
+    margin-top: -682px;
     background-color: #0c0c0c; /* Adjust as needed */
     color: white;
     display: flex;
@@ -72,7 +73,7 @@
 
 .info-labels {
     flex: 1; /* Allow labels to take equal space */
-    margin-right: 190px; /* Space between labels and descriptions */
+    margin-right: 210px; /* Space between labels and descriptions */
 }
 
 .info-descriptions {

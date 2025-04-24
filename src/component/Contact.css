@@ -1,7 +1,8 @@
 .contact-container {
     display: flex;
+    
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     text-align: center; /* Center the title in the left part */
 }
 .contact-titles {
@@ -13,6 +14,7 @@
 .left-partt {
     flex: 1;
     margin-top: -15px;
+    width: 430px;
     margin-right: 20px;
     background: #121212; /* Light background for left part */
     padding: 20px;
@@ -32,7 +34,7 @@
 }
 
  h2 {
-    font-size: 2.7em;
+    font-size: 2.4em;
     margin-left: 30px;
     color: #fdfcfb;
     margin-bottom: 15px; /* Space below titles */
@@ -106,19 +108,19 @@ button:hover {
     font-style: italic; /* Italicize additional info */
 }
 .additional-info p {
-    font-size: 1.2em; 
+    font-size: 1.4em; 
     text-align: center;
-    color: #333;
+    color: #a88383;
 }
 .logo-containers {
     display: flex;
-    margin-left: 32px;
+    margin-left: 12px;
     justify-content: space-around; /* Space logos evenly */
     align-items: center; /* Center logos vertically */
     margin-top: 40px; /* Space above the logo container */
-    width: 450px; /* Fixed width for the container */
+    width: 400px; /* Fixed width for the container */
     height: 100px; /* Fixed height for the container */
-    background-color: #1b1b1b; /* Background color for contrast */
+    background-color: #2b2a2a; /* Background color for contrast */
     border-radius: 10%; /* Rounded corners */
    
     padding: 10px; /* Padding inside the container */
@@ -171,7 +173,7 @@ button:hover {
 }
 
 .footer-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
