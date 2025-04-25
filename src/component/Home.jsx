@@ -5,7 +5,7 @@ const Home = ({ onHireMeClick }) => {
     const [text, setText] = useState('');
     const words = [
         "Frontend-Developer",
-        "Website-Developer",
+        "MERN-stack-Developer",
         "Software-Engineer",
     ];
 
